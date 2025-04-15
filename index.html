@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MARS IT Calculator</title>
+  <script type="module" src="main.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-purple-700 to-blue-500 text-white text-center">
+  <h1 class="text-3xl font-bold mb-6">MARS IT Calculator</h1>
+  
+  <input id="num1" type="number" class="mb-2 p-2 rounded text-black" placeholder="Enter first number">
+  <input id="num2" type="number" class="mb-4 p-2 rounded text-black" placeholder="Enter second number">
+
+  <div class="space-x-2 mb-6">
+    <button id="addBtn" class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded">Yig‘indi</button>
+    <button id="subBtn" class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded">Ayirma</button>
+    <button id="mulBtn" class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded">Ko‘paytma</button>
+    <button id="divBtn" class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded">Bo‘linma</button>
+  </div>
+
+  <h2 class="text-yellow-400 text-2xl font-bold">Result: <span id="result">0</span></h2>
+
+  <footer class="mt-8 text-sm">Mars it school calculator</footer>
+  <script src="./main.js"></script>
+  <script src="./calc.js"></script>
+</body>
+</html>
